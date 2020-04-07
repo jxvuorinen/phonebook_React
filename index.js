@@ -11,6 +11,8 @@ app.use(express.json());
 
 app.use(morgan('tiny'));
 
+app.use(express.static('build'));
+
 let persons = [
     {
         "name": "Arto Hellas",
