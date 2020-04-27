@@ -8,9 +8,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build:ui": "rm -rf build&& cd ../puhelinluetteloFront/puhelinluettelo &&npm run build&& cp -r build ../../puhelinluetteloBackend/",
-    "deploy": "git push heroku master",
+    "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui&&git add .&&git commit -m buildui&&git push&&npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail"
   },
   "keywords": [],
   "author": "",
