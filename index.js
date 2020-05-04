@@ -91,7 +91,7 @@ app.post('/api/persons', (req, res) => {
 });
 
 const generateID = () => {
-    const minId = persons.length + 1
+    const minId = persons.length + 1;
     const newId = Math.floor(Math.random() * (500 - minId)) + minId;
     return newId;
 }
